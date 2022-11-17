@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="Assets/firebase.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="title">
+        <h2>Weather App</h2>
+        
+    </div>
+    <div class="app-wrap">
+        <div id = "clock" onload="currentTime()"></div>
+        <header>
+        
+            <input type="text" autocomplete="off" 
+            class="search-box" placeholder="Cerca la località..."> <!-- L'attributo autocomplete secifica se il campo input deve essere automaticamente autocompletato o no -->
+        </header>
+        <main>
+            
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+                
+            </section>
+            <div class="current">
+                <div class="temp"><span></span></div>
+                <div class="weather"></div>
+                <div class="description"></div>
+                <div class="hi-low"></div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
