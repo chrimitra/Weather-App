@@ -84,13 +84,7 @@ function currentTime() {
       
     if(hh > 12){
         session = "PM";
-        document.body.style.backgroundImage = "url('Assets/Images/noon.jpg')";
-     } else if (hh > 19) {
-        session = "PM";
-        document.body.style.backgroundImage = "url('Assets/Images/night.jpg')";
-     } else if (hh < 12) {
-        document.body.style.backgroundImage = "url('Assets/Images/day.jpg')";
-     }
+    }
   
      hh = (hh < 10) ? "0" + hh : hh;
      mm = (mm < 10) ? "0" + mm : mm;
@@ -100,7 +94,6 @@ function currentTime() {
   
     document.getElementById("clock").innerText = time; 
     var t = setTimeout(function(){ currentTime() }, 1000); 
-    console.log(hh);
   }
   
 currentTime();
